@@ -45,19 +45,19 @@
                 </div>
             </div>
 
-            <div class="flex px-2 py-6">
-                <a href="" class="flex-none">
-                    <img class="w-10 h-10 rounded-xl" src="https://source.unsplash.com/150x150/?face&crop=face&v1"
-                         alt="avatar"></a>
-                <div class="mx-4">
+            <div class="flex flex-1 px-2 py-6">
+
+                <div class="flex-none">
+                    <a href="">
+                        <img class="w-10 h-10 rounded-xl" src="https://source.unsplash.com/150x150/?face&crop=face&v1"
+                             alt="avatar"></a>
+                </div>
+                <div class="w-full mx-4">
                     <h4 class="text-xl font-semibold">
                         <a href="" class="hover:underline">A random title can go here</a>
                     </h4>
                     <div class="text-gray-600 mt-3 line-clamp-3">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum laboriosam quod
-                        reiciendis voluptate. Ad aliquid aperiam dolor enim error est explicabo iusto laboriosam laborum
-                        nostrum quidem sint, sit totam ut, velit vitae voluptate voluptatem! Accusantium, ad aliquid
-                        amet dolorem et ex incidunt laborum, nostrum, nulla odio officiis tempore veritatis!
+                        Lorem mpore veritatis!
                     </div>
                     <div class="flex items-center justify-between mt-6">
                         <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
@@ -108,11 +108,11 @@
                 </div>
             </div>
 
-            <div class="flex px-2 py-6">
+            <div class="flex flex-1 px-2 py-6">
                 <a href="" class="flex-none">
                     <img class="w-10 h-10 rounded-xl" src="https://source.unsplash.com/150x150/?face&crop=face&v1"
                          alt="avatar"></a>
-                <div class="mx-4">
+                <div class="w-full mx-4">
                     <h4 class="text-xl font-semibold">
                         <a href="" class="hover:underline">Another random title can go here</a>
                     </h4>
