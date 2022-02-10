@@ -9,17 +9,17 @@ module.exports = {
 
     theme: {
         extend: {
-            spacing:{
-              70 : '17.5rem', 175:'43.75rem',
+            spacing: {
+                70: '17.5rem', 175: '43.75rem',
             },
-            colors:{
-                'gray-background':'#f7f8fc',
-                'blue':'#328af1',
-                'blue-hover':'#2879bd',
-                'yellow':'#ffc73c',
-                'red':'#ec454f',
-                'green':'#1aab8b',
-                'purple':'#8b60ed'
+            colors: {
+                'gray-background': '#f7f8fc',
+                'blue': '#328af1',
+                'blue-hover': '#2879bd',
+                'yellow': '#ffc73c',
+                'red': '#ec454f',
+                'green': '#1aab8b',
+                'purple': '#8b60ed'
             },
             fontFamily: {
                 sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
@@ -27,5 +27,5 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/line-clamp'),],
 };
