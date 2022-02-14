@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+[xcloak]{
+    display: none !important;
+}
 .comments-container::before{
     position: absolute;
     display: block;

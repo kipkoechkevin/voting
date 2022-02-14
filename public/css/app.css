@@ -1213,6 +1213,9 @@ select {
 .font-bold {
   font-weight: 700;
 }
+.font-normal {
+  font-weight: 400;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1398,6 +1401,9 @@ select {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+}
+[xcloak]{
+    display: none !important;
 }
 .comments-container::before{
     position: absolute;
