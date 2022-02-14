@@ -10,7 +10,14 @@ module.exports = {
     theme: {
         extend: {
             spacing: {
-                70: '17.5rem', 175: '43.75rem',
+                70: '17.5rem',
+                175: '43.75rem',
+                76: '19rem',
+                104: '24rem'
+            },
+            boxShadow: {
+                card: '4px 4px 15px 0 rgba(36, 37, 38, 0.08)',
+                dialog: '3px 4px 15px 0 rgba(36, 37, 38, 0.22)',
             },
             colors: {
                 'gray-background': '#f7f8fc',
