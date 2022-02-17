@@ -17,7 +17,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body class="font-sans antialiased text-gray-900 text-sm bg-gray-background ">
-<header class="flex items-center justify-between px-8 py-4">
+<header class="flex flex-col md:flex-row items-center justify-between px-8 py-4">
     <svg xmlns="http://www.w3.org/2000/svg" width="157" height="18" viewBox="0 0 157 18">
         <g fill="none" fill-rule="evenodd">
             <path fill="#4A4A4A" fill-rule="nonzero"
@@ -34,7 +34,7 @@
                   d="M101.718 9.147l-4.99 4.991a1.289 1.289 0 0 1-1.822-1.822l4.99-4.991a1.289 1.289 0 1 1 1.822 1.822zM94.288 16.578l-.75.75a1.289 1.289 0 0 1-1.822-1.822l.75-.75a1.289 1.289 0 1 1 1.822 1.822z"/>
         </g>
     </svg>
-    <div class="flex items-center">
+    <div class="flex items-center mt-2 md:mt-0">
         @if (Route::has('login'))
             <div class="px-6 py-4">
             @auth
@@ -64,9 +64,9 @@
     </div>
 </header>
 
-<main class="container mx-auto flex max-w-5xl">
-    <div class="w-70 mr-5">
-        <div class="bg-white  border-2 border-blue rounded-xl mt-16">
+<main class="container mx-auto flex flex-col md:flex-row max-w-5xl">
+    <div class="w-70 mx-auto md:mx-0 md:mr-5">
+        <div class="bg-white md:sticky top-8 border-2 border-blue rounded-xl mt-16">
             <div class="text-center px-6 py-2 pt-6">
                 <h3 class="font-semibold">Add an idea</h3>
                 <p class="text-xs mt-4"> Let us know what you'd like and we'll take a look over </p>
@@ -110,8 +110,8 @@
             </form>
         </div>
     </div>
-    <div class="w-175">
-        <nav class="flex item-center justify-between text-xs">
+    <div class="w-full px-2 md:px-0 md:w-175">
+        <nav class="hidden md:flex item-center justify-between text-xs">
             <ul class="flex uppercase font-semibold space-x-10 border-b-4 pb-3">
                 <li><a href="" class="border-b-4 pb-3 border-blue"> All Ideas(80)</a></li>
                 <li><a href="" class="text-gray-400 transition duration-200 ease-in border-b-4 pb-3 hover:border-blue ">
