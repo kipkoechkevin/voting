@@ -19,6 +19,7 @@ class IdeaFactory extends Factory
         $slug=Str::slug($title);
         return [
             'user_id' => User::factory(),
+            'category_id' => $this->faker->numberBetween(1,4),
             'title' => $title,
             'slug' => $slug,
             'description' => $this->faker->paragraph(5),

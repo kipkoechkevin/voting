@@ -16,7 +16,7 @@
         <div class="flex flex-col md:flex-row flex-1 px-4 py-6">
             <div class="flex-none mx-4">
                 <a href="">
-                    <img class="w-10 h-10 rounded-xl" src="https://source.unsplash.com/150x150/?face&crop=face&v=2"
+                    <img class="w-10 h-10 rounded-xl" src="{{$idea->user->getAvatar()}}"
                          alt="avatar"></a>
             </div>
             <div class="w-full mx-4">
@@ -32,7 +32,7 @@
                         <div class="hidden md:block">&bull;</div>
                         <div>{{$idea->created_at->diffForHumans()}}</div>
                         <div>&bull;</div>
-                        <div>Category One</div>
+                        <div>{{ $idea->category->name }}</div>
                         <div>&bull;</div>
                         <div class="text-gray-900">3 Comments</div>
                     </div>

@@ -59,7 +59,7 @@
                     <div class="flex-none mx-2 md:mx-4 md:mx-0">
                         <a href="">
                             <img class="w-10 h-10 rounded-xl"
-                                 src="https://source.unsplash.com/150x150/?face&crop=face&v1"
+                                 src="{{$idea->user->getAvatar()}}"
                                  alt="avatar"></a>
                     </div>
                     <div class="w-full mx-2 md:mx-4">
@@ -74,7 +74,7 @@
                             <div class="flex items-center text-xs font-semibold space-x-2 text-gray-400">
                                 <span>{{$idea->created_at->diffForHumans()}}</span>
                                 <div>&bull;</div>
-                                <span>Category One</span>
+                                <span>{{$idea->category->name}}</span>
                                 <div>&bull;</div>
                                 <span class="text-gray-900">3 Comments</span>
                             </div>
