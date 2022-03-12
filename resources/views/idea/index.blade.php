@@ -82,8 +82,8 @@
                                 x-data="{ isOpen: false }"
                                 class="flex items-center mt-4 md:mt-0 space-x-2">
                                 <button
-                                    class="bg-gray-200 text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
-                                    open
+                                    class="{{$idea->getStatusClasses()}} text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4">
+                                    {{$idea->status->name}}
                                 </button>
                                 <button
                                     @click="isOpen = !isOpen"
