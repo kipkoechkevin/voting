@@ -16,8 +16,8 @@ class CreateIdea extends Component
 
     protected $rules = [
         'title' => 'required|min:4',
-        'category' => 'required|min:4',
-        'description' => 'required|min:4',
+        'category' => 'required',
+        'description' => 'required',
     ];
 
     public function createIdea()

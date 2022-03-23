@@ -18,7 +18,7 @@ class IdeaFactory extends Factory
         $title = ucwords($this->faker->words(4, true));
         $slug=Str::slug($title);
         return [
-            'user_id' => User::factory(),
+            'user_id' => $this->faker->numberBetween(1,4),
             'category_id' => $this->faker->numberBetween(1,4),
             'status_id' => $this->faker->numberBetween(1,5),
             'title' => $title,
